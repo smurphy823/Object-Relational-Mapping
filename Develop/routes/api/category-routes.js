@@ -27,13 +27,26 @@ router.post('/', (req, res) => {
   Category.create(req.body).then(data => res.json(data))
 });
 
-router.put('/:id', (req, res) => {
+router.put('/:id', async (req, res) => {
   // update a category by its `id` value
-  Category.update(req.body, {
+/*   Category.update(req.body, {
     where: {
       id: req.params.id
     }
-  }).then(data => res.json(data))
+  }).then(data => res.json(data)) */
+  const id = req.params.id;
+  try {
+    const categoryData = await Category.update( req.body, {
+      where: {id: id}
+    })
+    if (!categoryData) {
+      res.status(400).json({message: 'You must enter data and a valid id to update!'})
+      return;
+    }
+    res.status(200).json(categoryData)
+  } catch (err) {
+    res.status(400).json(err);
+  }
 });
 
 router.delete('/:id', (req, res) => {
