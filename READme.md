@@ -1,15 +1,14 @@
 Project Title
 E-Commerce Back End
 
-Description
-Internet retail, also known as e-commerce, is the largest sector of the electronics industry, generating an estimated $29 trillion in 2019. E-commerce platforms like Shopify and WooCommerce provide a suite of services to businesses of all sizes. Due to their prevalence, understanding the fundamental architecture of these platforms will benefit you as a full-stack web developer.
+#Description
 
-Your task is to build the back end for an e-commerce site by modifying starter code. You’ll configure a working Express.js API to use Sequelize to interact with a MySQL database.
+This is a working back end of a retail E-comerce website.
 
-Because this application won’t be deployed, you’ll also need to provide a link to a walkthrough video that demonstrates its functionality and all of the acceptance criteria being met. You’ll need to submit a link to the video and add it to the readme of your project.
 
-Installation Instructions
-You will need node.js installed
+#Installation Instructions
+
+The application runs on a node.js command line. Run npm install and updtae your environment variables for your mySQL credentials.
 
 Node.js
 Use theMySQL2 NPM package to connect to your MySQL database and perform queries.
@@ -23,6 +22,10 @@ npm i mysql2
 npm i sequelizer
 
 Walkthrough Video:
+
+https://www.hippovideo.io/video/play/dyVeFmQcPWLqn4jrt9PczHOfF5YeSDBWXP8nRGDg3CU?utm_source=hv-campaigns&hreferer=private&_=1616872047586&
+Watch Video
+
 Mock-Up
 The following animation shows the application's GET routes to return all categories, all products, and all tags being tested in Insomnia Core:
 
@@ -36,10 +39,7 @@ The following animation shows the application's POST, PUT, and DELETE routes for
 
 In Insomnia Core, the user tests “DELETE Category by ID,” “CREATE Category,” and “UPDATE Category.”
 
-Your walkthrough video should also show the POST, PUT, and DELETE routes for products and tags being tested in Insomnia Core.
-
-Contribution Guidelines
-Link to Contributor's Covenant: https://www.contributor-covenant.org/version/2/0/code_of_conduct/
+this walkthrough video should also show the POST, PUT, and DELETE routes for products and tags being tested in Insomnia Core.
 
 License
 badge
